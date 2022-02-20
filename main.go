@@ -1,7 +1,7 @@
 package main
 
 import (
-	"package_var"
+	"github.com/shushuTona/go_practice/package_var"
 )
 
 func main() {
