@@ -9,12 +9,19 @@ import (
 	"github.com/shushuTona/go_practice/package_struct"
 	"github.com/shushuTona/go_practice/package_interface"
 	"github.com/shushuTona/go_practice/package_interface_type"
+	"github.com/shushuTona/go_practice/package_pointer"
 )
 
 func main() {
 	// package_var
 	package_var.PrintListSlice()
 	package_var.PrintMap()
+
+	// slicing
+	testSlice := []int{100, 200, 300, 400, 500}
+	fmt.Println(testSlice)
+	testSlice = testSlice[1:3]
+	fmt.Println(testSlice)
 
 	// package_go_to
 	package_go_to.ExecuteGoTo()
@@ -59,4 +66,11 @@ func main() {
 	package_interface_type.AddListItem( "key_2", "test_value" )
 	list := package_interface_type.AddListItem( "key_3", true )
 	fmt.Println(list)
+	
+	// package_pointer
+	package_pointer.TestPointer(100)
+
+	var num = 100
+	package_pointer.ChangeDoubleArg(&num)
+	fmt.Println(num)
 }
