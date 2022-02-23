@@ -10,6 +10,7 @@ import (
 	"github.com/shushuTona/go_practice/package_interface"
 	"github.com/shushuTona/go_practice/package_interface_type"
 	"github.com/shushuTona/go_practice/package_pointer"
+	"github.com/shushuTona/go_practice/package_closure"
 )
 
 func main() {
@@ -73,4 +74,10 @@ func main() {
 	var num = 100
 	package_pointer.ChangeDoubleArg(&num)
 	fmt.Println(num)
+
+	// package_closure
+	var addNum = package_closure.ClosuresFunc(100)
+	addNum(10)
+	addNum(20)
+	addNum(30)
 }
