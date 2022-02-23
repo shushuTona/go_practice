@@ -8,6 +8,7 @@ import (
 	"github.com/shushuTona/go_practice/package_func"
 	"github.com/shushuTona/go_practice/package_struct"
 	"github.com/shushuTona/go_practice/package_interface"
+	"github.com/shushuTona/go_practice/package_interface_type"
 )
 
 func main() {
@@ -47,4 +48,15 @@ func main() {
 	animal := package_interface.Animal{"Dog"}
 	package_interface.PrintOut(person)
 	package_interface.PrintOut(animal)
+
+	// package_interface_type
+	castVar := package_interface_type.CastToString( []string{} )
+	fmt.Println(castVar)
+	typeCheck := package_interface_type.TypeCheck( true )
+	fmt.Println(typeCheck)
+
+	package_interface_type.AddListItem( "key_1", 100 )
+	package_interface_type.AddListItem( "key_2", "test_value" )
+	list := package_interface_type.AddListItem( "key_3", true )
+	fmt.Println(list)
 }
