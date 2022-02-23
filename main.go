@@ -7,6 +7,7 @@ import (
 	"github.com/shushuTona/go_practice/package_go_to"
 	"github.com/shushuTona/go_practice/package_func"
 	"github.com/shushuTona/go_practice/package_struct"
+	"github.com/shushuTona/go_practice/package_interface"
 )
 
 func main() {
@@ -40,4 +41,10 @@ func main() {
 		"name": "test300",
 	})
 	fmt.Println(registerItemList)
+
+	// package_interface
+	person := package_interface.Person{"Tom"}
+	animal := package_interface.Animal{"Dog"}
+	package_interface.PrintOut(person)
+	package_interface.PrintOut(animal)
 }
