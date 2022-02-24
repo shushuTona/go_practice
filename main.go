@@ -11,6 +11,7 @@ import (
 	"github.com/shushuTona/go_practice/package_interface_type"
 	"github.com/shushuTona/go_practice/package_pointer"
 	"github.com/shushuTona/go_practice/package_closure"
+	"github.com/shushuTona/go_practice/package_defer"
 )
 
 func main() {
@@ -80,4 +81,7 @@ func main() {
 	addNum(10)
 	addNum(20)
 	addNum(30)
+
+	// package_defer
+	package_defer.DeferFunc(100);
 }
