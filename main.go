@@ -15,6 +15,7 @@ import (
 	"github.com/shushuTona/go_practice/package_goroutines"
 	"github.com/shushuTona/go_practice/package_channels"
 	"github.com/shushuTona/go_practice/package_channelBuffering"
+	"github.com/shushuTona/go_practice/package_channelSync"
 )
 
 func main() {
@@ -96,4 +97,7 @@ func main() {
 
 	// package_channelBuffering
 	package_channelBuffering.ExecuteChannelBuffering()
+
+	// package_channelSync
+	package_channelSync.ExecuteChannelSync()
 }
