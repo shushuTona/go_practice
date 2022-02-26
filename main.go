@@ -13,6 +13,8 @@ import (
 	"github.com/shushuTona/go_practice/package_closure"
 	"github.com/shushuTona/go_practice/package_defer"
 	"github.com/shushuTona/go_practice/package_goroutines"
+	"github.com/shushuTona/go_practice/package_channels"
+	"github.com/shushuTona/go_practice/package_channelBuffering"
 )
 
 func main() {
@@ -88,4 +90,10 @@ func main() {
 
 	// package_goroutines
 	package_goroutines.ExecuteGoroutine()
+
+	// package_channels
+	package_channels.ExecuteGoroutineChannel()
+
+	// package_channelBuffering
+	package_channelBuffering.ExecuteChannelBuffering()
 }
