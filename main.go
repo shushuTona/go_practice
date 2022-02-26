@@ -12,6 +12,7 @@ import (
 	"github.com/shushuTona/go_practice/package_pointer"
 	"github.com/shushuTona/go_practice/package_closure"
 	"github.com/shushuTona/go_practice/package_defer"
+	"github.com/shushuTona/go_practice/package_goroutines"
 )
 
 func main() {
@@ -84,4 +85,7 @@ func main() {
 
 	// package_defer
 	package_defer.DeferFunc(100);
+
+	// package_goroutines
+	package_goroutines.ExecuteGoroutine()
 }
