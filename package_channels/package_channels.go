@@ -5,6 +5,8 @@ import (
 )
 
 func ExecuteGoroutineChannel() {
+    fmt.Println("===== package_channels =====")
+
     messageChannel := make(chan string)
 
     go func(){

@@ -26,7 +26,7 @@ func getText(textChan <-chan string) {
 }
 
 func ExecuteChannelDirections() {
-	fmt.Println("start ExecuteChannelDirections")
+	fmt.Println("===== package_channelDirections =====")
 
 	textChan := make(chan string, 1)
 
@@ -35,6 +35,4 @@ func ExecuteChannelDirections() {
 	fmt.Println("setChanText...")
 
 	getText( textChan )
-
-	fmt.Println("finish ExecuteChannelDirections")
 }

@@ -18,6 +18,7 @@ import (
 	"github.com/shushuTona/go_practice/package_channelSync"
 	"github.com/shushuTona/go_practice/package_channelDirections"
 	"github.com/shushuTona/go_practice/package_select"
+	"github.com/shushuTona/go_practice/package_timeout"
 )
 
 func main() {
@@ -108,4 +109,7 @@ func main() {
 
 	// package_select
 	package_select.ExecuteSelect()
+
+	// package_timeout
+	package_timeout.Executetimeout()
 }

@@ -5,6 +5,8 @@ import (
 )
 
 func DeferFunc(num int) {
+    fmt.Println("===== package_defer =====")
+
     defer fmt.Println(num)
 
     fmt.Println("hello")

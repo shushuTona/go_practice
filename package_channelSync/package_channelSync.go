@@ -16,13 +16,11 @@ func worker(flag chan bool) {
 }
 
 func ExecuteChannelSync() {
-	fmt.Println("ExecuteChannelSync start")
+	fmt.Println("===== package_channelSync =====")
 
 	flag := make(chan bool, 1)
 
 	go worker( flag )
 
 	<-flag
-
-	fmt.Println("ExecuteChannelSync finish")
 }

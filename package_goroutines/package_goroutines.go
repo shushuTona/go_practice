@@ -12,6 +12,8 @@ func printText(labelText string) {
 }
 
 func ExecuteGoroutine() {
+    fmt.Println("===== package_goroutines =====")
+
     printText("通常実行")
     go printText("goroutines1")
     go printText("goroutines2")
