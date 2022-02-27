@@ -5,6 +5,8 @@ import (
 )
 
 func ExecuteChannelBuffering() {
+    fmt.Println("===== package_channelBuffering =====")
+
     messages := make(chan string, 2)
 
     messages <- "buffered"
