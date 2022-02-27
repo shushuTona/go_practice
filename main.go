@@ -21,6 +21,7 @@ import (
 	"github.com/shushuTona/go_practice/package_timeout"
 	"github.com/shushuTona/go_practice/package_closingChannels"
 	"github.com/shushuTona/go_practice/package_channelsRange"
+	"github.com/shushuTona/go_practice/package_waitGroups"
 )
 
 func main() {
@@ -120,4 +121,7 @@ func main() {
 
 	// package_channelsRange
 	package_channelsRange.ExecuteChannelsRange()
+
+	// package_waitGroups
+	package_waitGroups.ExecuteWaitGroups()
 }
