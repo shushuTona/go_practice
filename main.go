@@ -19,6 +19,7 @@ import (
 	"github.com/shushuTona/go_practice/package_channelDirections"
 	"github.com/shushuTona/go_practice/package_select"
 	"github.com/shushuTona/go_practice/package_timeout"
+	"github.com/shushuTona/go_practice/package_closingChannels"
 )
 
 func main() {
@@ -112,4 +113,7 @@ func main() {
 
 	// package_timeout
 	package_timeout.Executetimeout()
+
+	// package_closingChannels
+	package_closingChannels.ExecuteClosingChannels()
 }
