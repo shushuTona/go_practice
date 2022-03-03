@@ -22,7 +22,12 @@ import (
 	"github.com/shushuTona/go_practice/package_closingChannels"
 	"github.com/shushuTona/go_practice/package_channelsRange"
 	"github.com/shushuTona/go_practice/package_waitGroups"
+	"github.com/shushuTona/go_practice/local_package"
 )
+
+func init() {
+	fmt.Println("init!")
+}
 
 func main() {
 	// package_var
@@ -124,4 +129,8 @@ func main() {
 
 	// package_waitGroups
 	package_waitGroups.ExecuteWaitGroups()
+
+	// local_package
+	local_package.ExecuteA()
+	local_package.ExecuteB()
 }
